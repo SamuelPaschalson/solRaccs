@@ -14,11 +14,11 @@ const Feature: React.FC = () => {
             Why Raccs?
           </h1>
           <div className="max-w-2xl mx-auto text-gray-300">
-            <p className="mb-2">
+            {/* <p className="mb-2">
               Lorem ipsum dolor sit amet consectetur. Tristique potenti elit
-              praesent
-            </p>
-            <p>pellentesque maceenas elementum at.Tempus elementum porttitor</p>
+              praesent pellentesque maceenas elementum at.Tempus elementum
+              porttitor
+            </p> */}
           </div>
         </div>
 
@@ -33,8 +33,8 @@ const Feature: React.FC = () => {
               Profitability
             </h2>
             <p className="text-gray-300 text-center">
-              Lorem ipsum dolor sit amet potenti elit consectetur. Tristique
-              potenti elit praesent pellentesque.
+              Each purchase accrues value through community-driven
+              scarcity and demand.
             </p>
           </div>
 
@@ -45,8 +45,8 @@ const Feature: React.FC = () => {
             </div>
             <h2 className="text-2xl font-bold text-white mb-4">Zero Fees</h2>
             <p className="text-gray-300 text-center">
-              Lorem ipsum dolor sit amet potenti elit consectetur. Tristique
-              potenti elit praesent pellentesque.
+              Enjoy fee-free transactions within the RACCs ecosystem—no minting
+              or transfer charges.
             </p>
           </div>
 
@@ -57,8 +57,8 @@ const Feature: React.FC = () => {
             </div>
             <h2 className="text-2xl font-bold text-white mb-4">Premium Art</h2>
             <p className="text-gray-300 text-center">
-              Lorem ipsum dolor sit amet potenti elit consectetur. Tristique
-              potenti elit praesent pellentesque.
+              Aesthetic diversity spans styles and themes—offering art that
+              resonates with evolving tastes.
             </p>
           </div>
         </div>

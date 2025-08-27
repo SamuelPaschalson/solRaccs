@@ -11,10 +11,6 @@ const Tokenomics: React.FC = () => {
         <h3 className="text-4xl md:text-5xl text-center font-semibold mb-6">
           Token Information
         </h3>
-        <p className="text-gray-300 mb-10 text-center text-lg">
-          Lorem ipsum dolor sit amet consectetur. Tristique potenti elit
-          praesent
-        </p>
 
         {/* Token Details - Modified to match the image */}
         <div className="flex flex-col items-center justify-center">

@@ -12,10 +12,10 @@ const Buy: React.FC = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
             Watch our trading guide for beginners
           </h1>
-          <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto">
+          {/* <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto">
             Lorem ipsum dolor sit amet consectetur. Tristique potenti elit
             praesent pellentesque maecenas at.
-          </p>
+          </p> */}
         </div>
 
         {/* Steps Grid - Full width */}
@@ -25,10 +25,10 @@ const Buy: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
               Connect wallet
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base">
+            {/* <p className="text-gray-300 text-sm sm:text-base">
               Lorem ipsum dolor sit amet potenti elit consectetur, sit amet
               potenti.
-            </p>
+            </p> */}
           </div>
 
           {/* Step 2 */}
@@ -36,10 +36,10 @@ const Buy: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
               Select quantity
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base">
+            {/* <p className="text-gray-300 text-sm sm:text-base">
               Lorem ipsum dolor sit amet potenti elit consectetur, sit amet
               potenti.
-            </p>
+            </p> */}
           </div>
 
           {/* Step 3 */}
@@ -47,10 +47,10 @@ const Buy: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
               Confirm transaction
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base">
+            {/* <p className="text-gray-300 text-sm sm:text-base">
               Lorem ipsum dolor sit amet potenti elit consectetur, sit amet
               potenti.
-            </p>
+            </p> */}
           </div>
 
           {/* Step 4 */}
@@ -58,10 +58,10 @@ const Buy: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
               Receive SolRaccs
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base">
+            {/* <p className="text-gray-300 text-sm sm:text-base">
               Lorem ipsum dolor sit amet potenti elit consectetur, sit amet
               potenti.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
