@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FAQ = () => {
+const FAQ: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {

@@ -4,7 +4,7 @@ import left2 from '@/assets/left_2.png';
 import right1 from '@/assets/right_1.jpg';
 import right2 from '@/assets/right_2.png';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="w-full flex items-center justify-center min-h-screen overflow-hidden px-4 py-8 sm:py-12">
       <div className="container mx-auto text-white">

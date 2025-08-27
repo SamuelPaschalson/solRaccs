@@ -1,7 +1,7 @@
-import React from "react";
-import { FaWallet, FaList, FaCheckCircle, FaGift } from "react-icons/fa";
+import React from 'react';
+import { FaWallet, FaList, FaCheckCircle, FaGift } from 'react-icons/fa';
 
-const Buy = () => {
+const Buy: React.FC = () => {
   return (
     <div className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">

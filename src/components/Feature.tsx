@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaChartLine, FaMoneyBillWave, FaPalette } from 'react-icons/fa';
 
-const Feature = () => {
+const Feature: React.FC = () => {
   return (
     <div className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">

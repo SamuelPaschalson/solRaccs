@@ -1,7 +1,7 @@
-import React from "react";
-import { FaWallet, FaCoins, FaShoppingCart } from "react-icons/fa";
+import React from 'react';
+import { FaWallet, FaCoins, FaShoppingCart } from 'react-icons/fa';
 
-const Purchase = () => {
+const Purchase: React.FC = () => {
   return (
     <div className="bg-[#191501ff] min-h-20 py-6 px-4 sm:px-6 md:px-8 mx-2 sm:mx-4 md:mx-12 rounded-[1.5rem]">
       <div className="max-w-6xl mx-auto">

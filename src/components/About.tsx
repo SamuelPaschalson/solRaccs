@@ -1,7 +1,7 @@
-import React from "react";
-import about from "@/assets/about.png";
+import React from 'react';
+import about from '@/assets/about.png';
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">

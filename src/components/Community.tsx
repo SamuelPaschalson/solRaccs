@@ -1,7 +1,7 @@
 import React from 'react';
 import community from '@/assets/community.png';
 
-const Community = () => {
+const Community: React.FC = () => {
   return (
     <section className="w-full py-8 md:py-12 lg:py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16">

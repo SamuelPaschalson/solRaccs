@@ -4,7 +4,7 @@ import Discord from '@/assets/discord.svg';
 import X from '@/assets/x.svg';
 import Telegram from '@/assets/telegram.svg';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="w-full text-white py-8 px-4">
       <div className="container mx-auto">

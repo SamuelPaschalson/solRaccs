@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tokenomics = () => {
+const Tokenomics: React.FC = () => {
   return (
     <section className="w-full py-16 text-white">
       <div className="container mx-auto px-4">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Roadmap = () => {
+const Roadmap: React.FC = () => {
   const stages = [
     {
       title: 'Foundation',
