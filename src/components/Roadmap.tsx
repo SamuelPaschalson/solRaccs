@@ -7,80 +7,70 @@ const Roadmap: React.FC = () => {
   const stages = [
     {
       stageNumber: 'STAGE: 1',
-      title: 'Foundation: “Into the Trash”',
+      title: 'The Beginning”',
       items: [
         { text: 'Website launch', completed: true },
-        { text: 'Whitepaper release', completed: true },
+        { text: 'Deploy *$RACCS* Token', completed: true },
         {
-          text: 'Community building (Discord, Twitter, Telegram)',
-          completed: false,
+          text: 'Build core community (“trash mob”)',
+          completed: true,
         },
-        { text: 'Deployment of *$RACC token* (1B supply)', completed: false },
-        { text: 'Initial meme campaigns', completed: false },
+        { text: 'NFT artwork + teasers', completed: true },
       ],
     },
     {
       stageNumber: 'STAGE: 2',
-      title: 'Growth: "Raccoon Rising"',
+      title: 'Growth"',
       items: [
-        { text: 'Launch of *3333 SolRaccs NFT Collection*', completed: false },
-        { text: 'NFT minting platform live', completed: false },
+        { text: 'Mint of 3,333 SolRacc NFTs', completed: false },
+        { text: 'Community airdrops & meme contests', completed: false },
         {
-          text: 'Staking platform release (NFT + token rewards)',
+          text: 'CoinGecko + CMC listings',
           completed: false,
         },
-        { text: 'Meme contests & early community rewards', completed: false },
-        { text: 'Marketing campaigns & Solana partnerships', completed: false },
+        { text: 'Early NFT staking', completed: false },
       ],
     },
     {
       stageNumber: 'STAGE: 3',
-      title: 'Expansion: "Trash Empire"',
+      title: 'Expansion',
       items: [
         {
-          text: '*DAO activation* – community governance for $RACC holders',
+          text: 'Launch *RaccDAO*',
           completed: false,
         },
         {
-          text: 'SolRaccs *Marketplace* integration (NFT trading + token utility)',
+          text: 'NFT + token staking platform',
           completed: false,
         },
         {
-          text: 'Strategic partnerships with Solana projects',
+          text: 'Racc mini-game (play-to-earn)',
           completed: false,
         },
         {
-          text: 'Community-led initiatives (merch drops, meme competitions)',
-          completed: false,
-        },
-        {
-          text: 'Expansion of staking rewards & liquidity pools',
+          text: 'Strategic partnerships with Solana meme projects',
           completed: false,
         },
       ],
     },
     {
       stageNumber: 'STAGE: 4',
-      title: 'Beyond: "Moon Mischief"',
+      title: 'Moon Mission',
       items: [
         {
-          text: 'Cross-chain exploration (possible expansion to EVM or Layer-2s)',
+          text: 'IRL raccoon-themed events 🦝🎉',
           completed: false,
         },
         {
-          text: 'Meme collaborations with other NFT/token projects',
+          text: 'Merch store for holders',
           completed: false,
         },
         {
-          text: 'Gamified utilities (mini-games, raccoon-inspired dApps)',
+          text: 'Full community-driven ecosystem governance',
           completed: false,
         },
         {
           text: 'IRL (real-world) events & meetups for the Trash Mob',
-          completed: false,
-        },
-        {
-          text: 'Long-term sustainability plan & treasury growth',
           completed: false,
         },
       ],

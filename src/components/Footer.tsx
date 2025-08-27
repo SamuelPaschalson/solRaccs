@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div className="flex justify-end gap-4 mt-4">
-            <a
+            {/* <a
               href="#"
               className="text-gray-300 hover:text-white transition-colors"
             >
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 className="h-6 w-6 md:h-8 md:w-8"
                 alt="Discord"
               />
-            </a>
+            </a> */}
             <a
               href="https://x.com/raccsonsol"
               className="text-gray-300 hover:text-white transition-colors"

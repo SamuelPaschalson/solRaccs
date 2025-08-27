@@ -10,37 +10,39 @@ const FAQ: React.FC<FAQProps> = ({ id }) => {
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+  const formatText = (text: string) => {
+    return text.split(/(\*[^*]+\*)/g).map((part, index) => {
+      if (part.startsWith('*') && part.endsWith('*')) {
+        return (
+          <span
+            key={index}
+            className="font-bold bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] bg-clip-text text-transparent"
+          >
+            {part.slice(1, -1)}
+          </span>
+        );
+      }
+      return part;
+    });
+  };
   const faqItems = [
     {
       question: 'What is SolRaccs?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur. Tristique potenti elit praesent pellentesque meecenas elementum at.',
+        'A hybrid meme project on Solana combining a *3,333 raccoon NFT collection* and a community-driven token, $RACC.',
     },
     {
-      question: 'How does SolRaccs work?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur. Tristique potenti elit praesent pellentesque meecenas elementum at.',
+      question: 'How do I get SolRaccs?',
+      answer: 'Buy on Solana DEXes (Raydium, Orca, etc.) after launch.',
     },
     {
-      question: 'What makes SolRaccs unique?',
+      question: 'What can I do with SolRaccs NFT?',
       answer:
-        'Lorem ipsum dolor sit amet consectetur. Tristique potenti elit praesent pellentesque meecenas elementum at.',
+        'Stake, vote in the DAO, earn $RACC rewards, access exclusive giveaways & future games.',
     },
     {
-      question: 'How to get started with SolRaccs?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur. Tristique potenti elit praesent pellentesque meecenas elementum at.',
-    },
-    {
-      question: 'What blockchain does SolRaccs use?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur. Tristique potenti elit praesent pellentesque meecenas elementum at.',
-    },
-    {
-      question: 'Is SolRaccs secure?',
-      answer:
-        'Lorem ipsum dolor sit amet consectetur. Tristique potenti elit praesent pellentesque meecenas elementum at.',
+      question: 'Is this a financial advice?',
+      answer: 'Nope. It’s raccoon advice — much more valuable. 😉',
     },
   ];
 
@@ -58,9 +60,8 @@ const FAQ: React.FC<FAQProps> = ({ id }) => {
 
         {/* Description */}
         <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto text-lg">
-          Lorem ipsum dolor sit amet consectetur. Tristique potenti elit
-          <br />
-          praesent pellentesque meecenas elementum at.
+          SolRaccs is powered by the {formatText('*trash mob*')} — a community
+          of raccoon raiders, meme makers, and degens.
         </p>
 
         {/* FAQ Items Grid */}
@@ -100,7 +101,7 @@ const FAQ: React.FC<FAQProps> = ({ id }) => {
                   activeIndex === index ? 'max-h-96 mt-4' : 'max-h-0'
                 }`}
               >
-                <p className="text-gray-300 ml-8">{item.answer}</p>
+                <p className="text-gray-300 ml-8">{formatText(item.answer)}</p>
               </div>
             </div>
           ))}

@@ -2,6 +2,21 @@ import React from 'react';
 import about from '@/assets/about.png';
 
 const About: React.FC = () => {
+  const formatText = (text: string) => {
+    return text.split(/(\*[^*]+\*)/g).map((part, index) => {
+      if (part.startsWith('*') && part.endsWith('*')) {
+        return (
+          <span
+            key={index}
+            className="font-bold bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] bg-clip-text text-transparent"
+          >
+            {part.slice(1, -1)}
+          </span>
+        );
+      }
+      return part;
+    });
+  };
   return (
     <div className="container mx-auto px-4 py-12 md:py-16 text-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
@@ -29,14 +44,9 @@ const About: React.FC = () => {
             {/* Improved text layout for mobile */}
             <div className="space-y-3 md:space-y-4 text-white mb-6 md:mb-8">
               <p className="text-sm sm:text-base">
-                Lorem ipsum dolor sit amet consectetur. Tristique potenti elit
-                praesent pellentesque maccenas elementum at. Tempus elementum
-                porttitor molestie id.
-              </p>
-              <p className="text-sm sm:text-base">
-                Tristique potenti elit praesent pellentesque maccenas elementum
-                at. Tempus elementum porttitor molestie id. Tristique potenti
-                elit praesent pellentesque.
+                {formatText(
+                  'Raccoons are survivors, hustlers, and natural-born meme lords.Just like them, *SolRaccs* thrives in the chaos — mixing *NFTculture* with *meme token energy*. On Solana’s lightning-fastchain, we bring you: * A limited *3,333 NFT collection* 🖼 Ameme-powered *community token ($RACC)* 💰 * Utilities, staking,and future play-to-earn mechanics 🎮 This isn’t just anothermeme coin. This is a *trash mob revolution*.'
+                )}
               </p>
             </div>
 

@@ -7,7 +7,23 @@ import right2 from '@/assets/right_2.png';
 interface FAQProps {
   id?: string; // optional (use string if always required)
 }
+
 const Hero: React.FC<FAQProps> = ({ id }) => {
+  const formatText = (text: string) => {
+    return text.split(/(\*[^*]+\*)/g).map((part, index) => {
+      if (part.startsWith('*') && part.endsWith('*')) {
+        return (
+          <span
+            key={index}
+            className="font-bold bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] bg-clip-text text-transparent"
+          >
+            {part.slice(1, -1)}
+          </span>
+        );
+      }
+      return part;
+    });
+  };
   return (
     <section
       id={id}
@@ -33,23 +49,14 @@ const Hero: React.FC<FAQProps> = ({ id }) => {
           <div className="flex flex-col items-center text-center w-full lg:w-3/5 px-4 sm:px-0">
             {/* Main Heading */}
             <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-              Lorem Ipsum Dolor
+              Welcome to {formatText('*SolRaccs*')}
             </h1>
-
-            {/* Subheading with gradient text */}
-            <h2 className="mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-              Sit{' '}
-              <span className="bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] bg-clip-text text-transparent">
-                Amet
-              </span>{' '}
-              Consectetur
-            </h2>
 
             {/* Description text */}
             <p className="mb-8 sm:mb-10 text-gray-300 max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl text-base sm:text-[17px] md:text-[18px] leading-relaxed">
-              Lorem Ipsum Dolor Sit Amet Consectetur: Nunc Commodo Risus Rutrum
-              Nulla In Pellentesque Amet Mattis. Sed Malesuada Commodo Tincidunt
-              Accumsan Duis Ac Purus in Diam.
+              The first hybrid meme project on Solana with{' '}
+              {formatText('*3,333 unique raccoon NFTs*')} + the chaotic \$RACC
+              token
             </p>
 
             {/* Buttons */}
@@ -68,12 +75,12 @@ const Hero: React.FC<FAQProps> = ({ id }) => {
             </div>
 
             {/* Contract Address */}
-            <div className="mt-4 p-3 sm:p-4 rounded-lg backdrop-blur-sm bg-gray-800/40 sm:bg-transparent w-full max-w-md mx-auto">
+            {/* <div className="mt-4 p-3 sm:p-4 rounded-lg backdrop-blur-sm bg-gray-800/40 sm:bg-transparent w-full max-w-md mx-auto">
               <p className="text-sm sm:text-md font-mono text-gray-300 break-all sm:break-normal">
                 <span className="font-bold">CA:</span>{' '}
                 0x00000000000000000000000000
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column - Hidden on mobile, shown on lg screens */}
