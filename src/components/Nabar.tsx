@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Logo from "@/assets/logo.png";
+import React, { useState } from 'react';
+import Logo from '@/assets/logo.png';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             {/* <span className="sr-only">Open main menu</span> */}
             {/* Hamburger icon */}
             <svg
-              className={`w-6 h-6 ${isMenuOpen ? "hidden" : "block"}`}
+              className={`w-6 h-6 ${isMenuOpen ? 'hidden' : 'block'}`}
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             </svg>
             {/* Close icon */}
             <svg
-              className={`w-6 h-6 ${isMenuOpen ? "block" : "hidden"}`}
+              className={`w-6 h-6 ${isMenuOpen ? 'block' : 'hidden'}`}
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -76,28 +76,28 @@ const Navbar: React.FC = () => {
         {/* Navigation links */}
         <div
           className={`items-center justify-between w-full lg:flex lg:w-auto lg:order-1 ${
-            isMenuOpen ? "block" : "hidden"
+            isMenuOpen ? 'block' : 'hidden'
           }`}
           id="mobile-menu-2"
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             {[
-              { href: "#", label: "Home", current: true },
-              { href: "#", label: "About Us" },
-              { href: "#", label: "Features" },
-              { href: "#", label: "Tokenomics" },
-              { href: "#", label: "Roadmap" },
-              { href: "#", label: "FAQ" },
+              { href: '#', label: 'Home', current: true },
+              { href: '#about', label: 'About Us' },
+              { href: '#feature', label: 'Features' },
+              { href: '#', label: 'Tokenomics' },
+              { href: '#', label: 'Roadmap' },
+              { href: '#faq', label: 'FAQ' },
             ].map((item, index) => (
               <li key={index}>
                 <a
                   href={item.href}
                   className={`block py-2 pl-3 pr-4 ${
                     item.current
-                      ? "text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                      : "text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                      ? 'text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white'
+                      : 'text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'
                   }`}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={item.current ? 'page' : undefined}
                 >
                   {item.label}
                 </a>

@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               />
             </a>
             <a
-              href="#"
+              href="https://x.com/raccsonsol"
               className="text-gray-300 hover:text-white transition-colors"
             >
               <img
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
               />
             </a>
             <a
-              href="#"
+              href="https://t.me/+CXFyzu2DLl5mMTI0"
               className="text-gray-300 hover:text-white transition-colors"
             >
               <img

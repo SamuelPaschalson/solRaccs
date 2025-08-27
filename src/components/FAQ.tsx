@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-const FAQ: React.FC = () => {
+interface FAQProps {
+  id?: any;
+}
+
+const FAQ: React.FC<FAQProps> = ({ id }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -41,9 +45,11 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-16 text-white">
+    <section className="w-full py-16 text-white" id={id}>
       <div className="container mx-auto px-4">
-        <h3 className="text-green-400 mr-3 text-center mb-2">FAQ</h3>
+        <h3 className="text-center text-xs md:text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] mb-4 uppercase tracking-wider">
+          FAQ
+        </h3>
 
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">

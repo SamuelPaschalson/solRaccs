@@ -4,9 +4,15 @@ import left2 from '@/assets/left_2.png';
 import right1 from '@/assets/right_1.jpg';
 import right2 from '@/assets/right_2.png';
 
-const Hero: React.FC = () => {
+interface FAQProps {
+  id?: string; // optional (use string if always required)
+}
+const Hero: React.FC<FAQProps> = ({ id }) => {
   return (
-    <section className="w-full flex items-center justify-center min-h-screen overflow-hidden px-4 py-8 sm:py-12">
+    <section
+      id={id}
+      className="w-full flex items-center justify-center min-h-screen overflow-hidden px-4 py-8 sm:py-12"
+    >
       <div className="container mx-auto text-white">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-4">
           {/* Left Column - Hidden on mobile, shown on lg screens */}
@@ -24,7 +30,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Center Column - Main Content */}
-          <div className="flex flex-col items-center text-center w-full lg:w-3/5">
+          <div className="flex flex-col items-center text-center w-full lg:w-3/5 px-4 sm:px-0">
             {/* Main Heading */}
             <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
               Lorem Ipsum Dolor
@@ -48,16 +54,21 @@ const Hero: React.FC = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-8 sm:mb-10 w-full max-w-xs sm:max-w-md">
-              <button className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] text-black font-bold rounded-lg hover:opacity-90 transition-opacity text-base sm:text-lg">
+              <button className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] text-white font-bold rounded-lg hover:opacity-90 transition-opacity text-base sm:text-lg">
                 Get Started
               </button>
-              <button className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-gray-600 text-white font-bold rounded-lg hover:bg-gray-800/30 transition-colors text-base sm:text-lg">
+              <button
+                onClick={() =>
+                  window.open('https://solraccs.gitbook.io/solraccs/')
+                }
+                className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-gray-600 text-white font-bold rounded-lg hover:bg-gray-800/30 transition-colors text-base sm:text-lg"
+              >
                 Documentation
               </button>
             </div>
 
             {/* Contract Address */}
-            <div className="mt-4 p-3 sm:p-4 rounded-lg backdrop-blur-sm bg-gray-800/40 sm:bg-transparent">
+            <div className="mt-4 p-3 sm:p-4 rounded-lg backdrop-blur-sm bg-gray-800/40 sm:bg-transparent w-full max-w-md mx-auto">
               <p className="text-sm sm:text-md font-mono text-gray-300 break-all sm:break-normal">
                 <span className="font-bold">CA:</span>{' '}
                 0x00000000000000000000000000
