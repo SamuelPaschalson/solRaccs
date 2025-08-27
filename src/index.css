@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  border: 2px solid transparent;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%) border-box;
+}
+
+.gradient-element {
+  background: linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.gradientelement {
+  color: linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: blur(90px);
+  z-index: 0;
+}
+
+.content-section {
+  position: relative;
+  z-index: 10;
+}
+
+.glass-effect {
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.roadmap-phase::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fd6e6a 0%, #ffc600 100%);
+  z-index: 1;
+}
+
+.roadmap-phase::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 2px;
+  height: calc(100% + 40px);
+  background: linear-gradient(to bottom, #fd6e6a, #ffc600);
+}
+
+.roadmap-phase:last-child::after {
+  display: none;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.token-card {
+  transition: transform 0.3s ease;
+}
+
+.token-card:hover {
+  transform: translateY(-5px);
+}

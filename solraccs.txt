@@ -1,0 +1,7 @@
+echo "# solRaccs" >> README.md
+git init
+git add README.md
+git commit -m "solRaccs commit"
+git branch -M master
+git remote add origin https://github.com/SamuelPaschalson/solRaccs.git
+git push -u origin master
