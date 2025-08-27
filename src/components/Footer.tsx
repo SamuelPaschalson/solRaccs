@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '@/assets/logo.png';
-import Discord from '@/assets/discord.svg';
 import X from '@/assets/x.svg';
 import Telegram from '@/assets/telegram.svg';
 
