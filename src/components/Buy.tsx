@@ -50,9 +50,6 @@ const Buy: React.FC = () => {
           <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {/* Step 1 */}
             <div className="p-4 sm:p-6 rounded-xl border border-gray-700 flex flex-col">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] flex items-center justify-center text-white text-lg mb-4">
-                <FaWallet />
-              </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-4">
                 Connect wallet
               </h3>
@@ -64,9 +61,6 @@ const Buy: React.FC = () => {
 
             {/* Step 2 */}
             <div className="p-4 sm:p-6 rounded-xl border border-gray-700 flex flex-col">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] flex items-center justify-center text-white text-lg mb-4">
-                <FaList />
-              </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-4">
                 Select quantity
               </h3>
@@ -78,9 +72,6 @@ const Buy: React.FC = () => {
 
             {/* Step 3 */}
             <div className="p-4 sm:p-6 rounded-xl border border-gray-700 flex flex-col">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] flex items-center justify-center text-white text-lg mb-4">
-                <FaCheckCircle />
-              </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-4">
                 Confirm transaction
               </h3>
@@ -92,9 +83,6 @@ const Buy: React.FC = () => {
 
             {/* Step 4 */}
             <div className="p-4 sm:p-6 rounded-xl border border-gray-700 flex flex-col">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#fd6e6a] to-[#ffc600] flex items-center justify-center text-white text-lg mb-4">
-                <FaGift />
-              </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-4">
                 Receive SolRaccs
               </h3>
