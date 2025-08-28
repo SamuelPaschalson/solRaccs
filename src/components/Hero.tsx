@@ -55,7 +55,7 @@ const Hero: React.FC<FAQProps> = ({ id }) => {
             {/* Description text */}
             <p className="mb-8 sm:mb-10 text-gray-300 max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl text-base sm:text-[17px] md:text-[18px] leading-relaxed">
               The first hybrid meme project on Solana with{' '}
-              {formatText('*3,333 unique raccoon NFTs*')} + the chaotic \$RACC
+              {formatText('*3,333 unique raccoon NFTs*')} + the chaotic $RACC
               token
             </p>
 
